@@ -1,0 +1,95 @@
+.header{
+    background: rgba(0, 0, 0, 0.034);
+    backdrop-filter: blur(7px);
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    z-index: 9999;
+}
+.header-container{
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px 0; */
+}
+.header-left{
+    display: flex;
+    align-items: center;
+    column-gap: 6rem;
+}
+.header-left ul{
+    font-weight: bold;
+    display: flex;
+    font-size: 14px;
+    list-style: none;
+    column-gap: 3rem;
+    text-transform: uppercase;
+}
+.header-left ul li{
+    display: inline-block;
+}
+.header-left ul li a{
+    position: relative;
+}
+
+.head{
+    color: white;
+}
+.head::after{
+    content: '';
+    height: 0.1rem;
+    width: 0;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.4s;
+}
+.head:hover::after{
+    width: 100%;
+}
+.active-head::after{
+    content: '';
+    height: 0.1rem;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: -0.5rem;
+    transition: 0.4s;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    column-gap: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.header-logo img{
+    height: 40px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.header-btn{
+    background: transparent;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid #00B696;
+    cursor: pointer;
+    background: rgba(128, 128, 128, 0.315);
+    transition: .2s ease-in;
+}
+.header-btn:hover{
+    background: rgba(128, 128, 128, 0.555);
+}
+.header-login:hover{
+    cursor: pointer;
+    color: #00b695;
+}

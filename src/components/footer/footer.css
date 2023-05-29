@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer-logo img{
+    height: 45px;
+}
+.footer-socials{
+    display: flex;
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+}

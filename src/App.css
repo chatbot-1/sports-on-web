@@ -1,0 +1,16 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 1050px;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+body{
+  background: linear-gradient(#00B696, #1D9299);
+}
+html{
+  scroll-behavior: smooth;
+}
