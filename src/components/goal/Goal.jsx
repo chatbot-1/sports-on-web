@@ -11,28 +11,35 @@ const Goal = () => {
           <div className="goal-data">
             <h2>Our Goal</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
-              molestias! Sapiente reprehenderit, facilis maiores optio sit ipsum
-              voluptates et necessitatibus harum temporibus. Reprehenderit
-              officia debitis quaerat consectetur quo cumque hic recusandae
-              laudantium. Architecto, distinctio nostrum? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Earum dolores, minima, atque
-              quaerat magni sequi deleniti laudantium illo doloremque quos
-              commodi. Praesentium, tempore sint minus doloribus in sapiente
-              ipsam quasi? maiores? Eius voluptatem vitae et, provident iure
-              beatae odit impedit incidunt? Odio, ipsum dolores?
+              At SportOn, our mission is to empower sports enthusiasts like you
+              to connect, organize, and play together. We understand the passion
+              you have for sports and the joy that comes from sharing those
+              experiences with others. That's why we've created a platform that
+              makes it easier than ever to coordinate and participate in sports
+              matches, bringing your favorite activities to life.
             </p>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos,
-              molestias! Sapiente reprehenderit, facilis maiores optio sit ipsum
-              voluptates et necessitatibus harum temporibus. Reprehenderit
-              officia debitis quaerat consectetur quo cumque hic recusandae
-              laudantium. Architecto, distinctio nostrum? Lorem ipsum dolor sit
-              amet Praesentium, tempore sint minus doloribus in sapiente ipsam
-              quasi? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Accusamus sunt architecto excepturi sapiente libero. Dolor,
-              architecto maiores? Eius voluptatem vitae et, provident iure
-              beatae odit impedit incidunt? Odio, ipsum dolores?
+              With SportOn, you have the power to take control of your sporting
+              journey. Whether you're looking to join an existing session,
+              create a new one, or simply find like-minded individuals to engage
+              in a friendly match, our app is here to support you every step of
+              the way.
+            </p>
+            <p>
+              Furthermore, we're committed to ensuring a safe and inclusive
+              environment for everyone. We prioritize user privacy and provide
+              moderation tools to maintain a respectful and enjoyable
+              atmosphere. Our goal is to foster a supportive community where
+              people of all backgrounds and skill levels feel welcome,
+              motivated, and inspired to push their sporting boundaries.
+            </p>
+            <p>
+              Join us on this exciting journey as we revolutionize the way
+              sports matches are organized and experienced. With SportOn, you
+              have the ultimate tool to unleash your passion for sports, forge
+              unforgettable memories, and create a vibrant community of sports
+              enthusiasts. Let's come together, play together, and elevate the
+              way we enjoy sports!
             </p>
           </div>
           <div className="goal-img">

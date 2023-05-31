@@ -34,3 +34,42 @@
 .goal-man img{
     height: 280px;
 }
+
+@media (max-width: 1134px) {
+    .goal-container{
+        width: 70%;
+      }
+    .goal-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5rem;
+    }
+    .goal-man img{
+        height: 200px;
+    }
+    .goal-img img{
+        height: 300px;
+    }
+    .goal-data h2{
+        font-size: 35px;
+        margin-bottom: 1rem;
+    }
+    .goal-data p{
+        margin-bottom: 3rem;
+        font-size: 12px;
+    }
+    
+}
+@media (max-width: 833px){
+    .goal{
+        margin-top: 5rem;
+        height: 100%;
+    }
+    .goal-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

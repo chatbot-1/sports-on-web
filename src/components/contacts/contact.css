@@ -8,7 +8,7 @@
 .contactform {
   position: relative;
   width: 60%;
-  left: 8%;
+  left: 15%;
   padding: 4rem;
   /* margin-bottom: 5rem; */
 }
@@ -69,6 +69,7 @@
   background: rgba(255, 255, 255, 0.76);
 }
 hr {
+  width: 100%;
   margin-bottom: 2rem;
 }
 .contact-women {
@@ -78,4 +79,34 @@ hr {
 }
 .contact-women img{
   height: 300px;
+}
+
+@media (max-width: 1150px){
+  .contactform {
+    position: relative;
+    width: 70%;
+    left: 25%;
+    padding: 4rem;
+    /* margin-bottom: 5rem; */
+  }
+  .contact-women img{
+    height: 200px;
+  }
+  .contactform h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 2.5rem;
+  }
+}
+@media (max-width: 750px){
+  .contact-women{
+    display: none;
+  }
+  .contactform{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    width: 100%;
+  }
 }

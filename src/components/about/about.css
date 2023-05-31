@@ -1,12 +1,13 @@
 .about{
     height: 100vh;
+    display: flex;
 }
 .about-box{
     display: grid;
-    grid-template-columns: repeat(3, 250px);
+    grid-template-columns: repeat(4, 220px);
     justify-content: center;
     align-items: center;
-    column-gap: 5rem;
+    column-gap: 2rem;
 }
 .about-data{
     width: 400px;
@@ -85,4 +86,71 @@
 }
 .home-box3 h3{
     color: #0C4C87;
+}
+@media (max-width: 1218px){
+    .about-box{
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    } 
+    .about{
+        height: 100%;
+    }
+    .boxi{
+        margin: 15px 0;
+    }
+}
+@media (max-width: 1100px) {
+    .about-data{
+        position: relative;
+        left: 11%;
+    }
+    .about-box{
+        display: grid;
+        grid-template-columns: repeat(2, 300px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    .boxi{
+        margin: 15px 0;
+    }
+    .about{
+        height: 100%;
+    }
+}
+@media (max-width: 1050px){
+    .about-box{
+        display: grid;
+        grid-template-columns: repeat(1, 400px);
+        justify-content: center;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    .icon-left,
+    .icon-right{
+        display: none;
+    }
+}
+@media (max-width: 554px){
+    .about-data{
+        width: 300px;
+    }
+    .about-box{
+        grid-template-columns: repeat(1, 300px);
+    }
+    .icon-left,
+    .icon-right{
+        display: none;
+    }
+}
+@media (max-width: 450px){
+    .about-box{
+        grid-template-columns: repeat(1, 200px);
+    }
+    .about-data{
+        width: 250px;
+    }
 }

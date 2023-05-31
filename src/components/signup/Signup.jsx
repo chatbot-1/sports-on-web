@@ -19,7 +19,7 @@ const Signup = () => {
     if (!values.name || !values.email || !values.pass) {
       return;
     }
-    alert("Successfully Signed Up");
+    // alert("Successfully Signed Up");
 
     setSubmitButton(true);
     createUserWithEmailAndPassword(auth, values.email, values.pass)
@@ -34,6 +34,7 @@ const Signup = () => {
       })
       .catch((err) => {
         setSubmitButton(false)
+        alert(err.message)
       });
   };
 
