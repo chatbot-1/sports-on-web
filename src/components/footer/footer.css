@@ -5,9 +5,11 @@
 }
 .footer-container{
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
+    column-gap: 4rem;
     align-items: center;
+    margin-bottom: 1rem;
 }
 .footer-logo img{
     height: 45px;

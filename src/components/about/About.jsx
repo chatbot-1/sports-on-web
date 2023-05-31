@@ -3,6 +3,13 @@ import "./about.css";
 import box1 from "../../assets/box1.png";
 import box2 from "../../assets/box2.png";
 import box3 from "../../assets/box3.png";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import { Pagination, Navigation } from "swiper";
 
 const About = () => {
   return (
@@ -15,11 +22,38 @@ const About = () => {
             suscipit voluptates ataus molesti Laboriosam?
           </p>
         </div>
-        <div className="about-box-data">
-          <i className="icon-left">
-            <box-icon name="chevron-left"></box-icon>
-          </i>
-          <div className="about-box">
+        <Swiper
+          slidesPerView={3}
+          spaceBetween={50}
+          loop={true}
+          pagination={{
+            clickable: true,
+          }}
+          navigation={true}
+          modules={[Pagination, Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <div className="home-box1 boxi">
+              <img src={box2} alt="" />
+              <h3>Footbal</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                voluptatum odit obcaecati, aperiam totam dolorum.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="home-box1 boxi">
+              <img src={box3} alt="" />
+              <h3>Footbal</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                voluptatum odit obcaecati, aperiam totam dolorum.
+              </p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
             <div className="home-box1 boxi">
               <img src={box1} alt="" />
               <h3>Footbal</h3>
@@ -28,27 +62,38 @@ const About = () => {
                 voluptatum odit obcaecati, aperiam totam dolorum.
               </p>
             </div>
-            <div className="home-box2 boxi">
-              <img src={box2} alt="" />
-              <h3>Basketball</h3>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="home-box1 boxi">
+              <img src={box1} alt="" />
+              <h3>Footbal</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-                dolorem molestias temporibus corporis necessitatibus nemo?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                voluptatum odit obcaecati, aperiam totam dolorum.
               </p>
             </div>
-            <div className="home-box3 boxi">
-              <img src={box3} alt="" />
-              <h3>Volleyball</h3>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="home-box1 boxi">
+              <img src={box1} alt="" />
+              <h3>Footbal</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Corporis soluta autem eos maiores, aspernatur cumque.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                voluptatum odit obcaecati, aperiam totam dolorum.
               </p>
             </div>
-          </div>
-          <i className="icon-right">
-            <box-icon name="chevron-right"></box-icon>
-          </i>
-        </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="home-box1 boxi">
+              <img src={box1} alt="" />
+              <h3>Footbal</h3>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
+                voluptatum odit obcaecati, aperiam totam dolorum.
+              </p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
       </div>
     </div>
   );

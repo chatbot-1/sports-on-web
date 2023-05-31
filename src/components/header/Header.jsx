@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./header.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   const [navActive, setNavActive] = useState("#home");
 
   return (
@@ -67,7 +68,7 @@ const Header = () => {
         </div>
         <div className="header-right">
           <button className="header-btn">Join Now</button>
-          <span className="header-login">Login</span>
+          <Link to="/login"><span className="header-login">{props.name ? `Welcome - ${props.name}` : "Login"}</span></Link>
         </div>
       </div>
     </div>
