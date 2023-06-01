@@ -22,7 +22,7 @@ const About = () => {
           <div className="about-box">
             <div className="home-box1 boxi">
               <img src={box2} alt="" />
-              <h3>Footbal</h3>
+              <h3>Football</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
                 voluptatum odit obcaecati, aperiam totam dolorum.
@@ -30,7 +30,7 @@ const About = () => {
             </div>
             <div className="home-box1 boxi">
               <img src={box3} alt="" />
-              <h3>Footbal</h3>
+              <h3>Basketball</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
                 voluptatum odit obcaecati, aperiam totam dolorum.
@@ -38,7 +38,7 @@ const About = () => {
             </div>
             <div className="home-box1 boxi">
               <img src={box1} alt="" />
-              <h3>Footbal</h3>
+              <h3>Volleyball</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
                 voluptatum odit obcaecati, aperiam totam dolorum.
@@ -46,7 +46,7 @@ const About = () => {
             </div>
             <div className="home-box1 boxi">
               <img src={box1} alt="" />
-              <h3>Footbal</h3>
+              <h3>Badminton</h3>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque
                 voluptatum odit obcaecati, aperiam totam dolorum.

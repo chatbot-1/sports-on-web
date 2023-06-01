@@ -87,6 +87,17 @@ const Header = () => {
                 </li>
                 <li>
                   <a
+                    href="#team"
+                    onClick={() => setNavActive("#goal")}
+                    className={
+                      navActive === "#teaml" ? "head active-head" : "head"
+                    }
+                  >
+                    Our Team
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="#contact"
                     onClick={() => setNavActive("#contact")}
                     className={

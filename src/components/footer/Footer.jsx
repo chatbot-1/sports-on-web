@@ -15,6 +15,12 @@ const Footer = () => {
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
+        <div className="privacy">
+          <a href="">Privacy and Policy</a>
+        </div>
+        <div className="condition">
+          <a href="">Terms and condition</a>
+        </div>
       </div>
     </div>
   );

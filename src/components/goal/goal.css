@@ -46,11 +46,9 @@
         column-gap: 5rem;
     }
     .goal-man img{
-        height: 200px;
+        height: 190px;
     }
-    .goal-img img{
-        height: 300px;
-    }
+    
     .goal-data h2{
         font-size: 35px;
         margin-bottom: 1rem;
@@ -71,5 +69,28 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    .goal-img img{
+        height: 350px;
+    }
+    .goal-man img{
+        height: 170px;
+    }
+}
+@media (max-width: 400px){
+    .goal-man img{
+        height: 150px;
+    }
+    .goal-img img{
+        height: 300px;
+    }
+
+}
+@media (max-width: 300px){
+    .goal-man img{
+        height: 120px;
+    }
+    .goal-img img{
+        height: 270px;
     }
 }

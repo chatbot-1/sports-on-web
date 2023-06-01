@@ -135,9 +135,17 @@
     }
 }
 @media (max-width: 554px){
-    .about-data{
-        width: 300px;
-    }
+    
+        .about-data{
+            position: relative;
+            left: 17%;
+        }
+        .about-data h2{
+            font-size: 35px;
+        }
+        .about-data p{
+            font-size: 15px;
+        }
     .about-box{
         grid-template-columns: repeat(1, 300px);
     }
@@ -148,7 +156,15 @@
 }
 @media (max-width: 450px){
     .about-box{
-        grid-template-columns: repeat(1, 200px);
+        grid-template-columns: repeat(1, 260px);
+    }
+    .about-data{
+        width: 250px;
+    }
+}
+@media (max-width: 300px){
+    .about-box{
+        grid-template-columns: repeat(1, 220px);
     }
     .about-data{
         width: 250px;
