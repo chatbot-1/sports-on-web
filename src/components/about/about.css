@@ -1,22 +1,25 @@
 .about{
     height: 100vh;
     display: flex;
-}
-.about-box{
-    display: grid;
-    grid-template-columns: repeat(4, 220px);
     justify-content: center;
     align-items: center;
-    column-gap: 2rem;
+    background: #00c9a4;
 }
+/* .about-box{
+    display: grid;
+    grid-template-columns: repeat(4, 220px);
+    justify-content: center;01B697
+    align-items: center;
+    column-gap: 2rem;
+} */
 .about-data{
     width: 400px;
 }
 .about-data h2{
     font-size: 40px;
     line-height: 40px;
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    /* padding-top: 4rem; */
+    padding-bottom: 4rem;
 }
 .about-data p{
     margin-bottom: 1.5rem;
@@ -25,11 +28,9 @@
     height: 170px;
     width: 170px;
     transition: .2s ease-in-out;
-
 }
 .boxi img:hover{
     transform: scale(1.05);
- 
 }
 .boxi{
     display: flex;
@@ -39,37 +40,12 @@
     background-color: white;
     padding: 25px 15px;
     cursor: pointer;
+    margin: 0 1rem;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.295);
+    /* max-width: 320px; */
+    /* margin:  0 auto; */
+}
 
-}
-.about-box-data{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.icon-left{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-    border-radius: 50%;
-    padding: 4px;
-    background-color: #0C8762;
-    margin-right: 45px;
-}
-.icon-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-    border-radius: 50%;
-    padding: 4px;
-    background-color: #0C8762;
-    margin-left: 45px;
-    
-}
 .boxi p{
     color: #666666;
     font-weight: bold;
@@ -87,51 +63,69 @@
 .home-box3 h3{
     color: #0C4C87;
 }
-@media (max-width: 1218px){
-    .about-box{
-        display: grid;
-        grid-template-columns: repeat(3, 250px);
-        justify-content: center;
-        align-items: center;
-        column-gap: 2rem;
-    } 
-    .about{
-        height: 100%;
-    }
-    .boxi{
-        margin: 15px 0;
-    }
-}
+
 @media (max-width: 1100px) {
     .about-data{
         position: relative;
         left: 11%;
     }
     .about-box{
-        display: grid;
-        grid-template-columns: repeat(2, 300px);
-        justify-content: center;
-        align-items: center;
-        column-gap: 2rem;
-    }
-    .boxi{
-        margin: 15px 0;
-    }
-    .about{
-        height: 100%;
+        width: 850px;
+        margin: 0 auto;
     }
 }
-@media (max-width: 1050px){
+@media (max-width: 950px){
     .about-box{
-        display: grid;
-        grid-template-columns: repeat(1, 400px);
-        justify-content: center;
-        align-items: center;
-        column-gap: 2rem;
+        width: 820px;
+        margin: 0 auto;
     }
-    .icon-left,
-    .icon-right{
-        display: none;
+}
+@media (max-width: 900px){
+    .about-box{
+        width: 800px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 860px){
+    .about-box{
+        width: 650px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 740px){
+    .about-box{
+        width: 600px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 660px){
+    .about-box{
+        width: 550px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px){
+    .about-box{
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 550px){
+    .about-box{
+        width: 400px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 470px){
+    .about-box{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 380px){
+    .about-box{
+        width: 250px;
+        margin: 0 auto;
     }
 }
 @media (max-width: 554px){
@@ -146,26 +140,21 @@
         .about-data p{
             font-size: 15px;
         }
-    .about-box{
-        grid-template-columns: repeat(1, 300px);
-    }
-    .icon-left,
-    .icon-right{
-        display: none;
-    }
+    
 }
-@media (max-width: 450px){
-    .about-box{
-        grid-template-columns: repeat(1, 260px);
-    }
+@media (max-width: 485px){
+    
     .about-data{
         width: 250px;
     }
 }
-@media (max-width: 300px){
-    .about-box{
-        grid-template-columns: repeat(1, 220px);
+@media (max-width: 450px){
+    
+    .about-data{
+        width: 230px;
     }
+}
+@media (max-width: 300px){
     .about-data{
         width: 250px;
     }

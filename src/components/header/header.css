@@ -86,18 +86,30 @@
   background: rgba(128, 128, 128, 0.315);
   transition: 0.2s ease-in;
 }
+.logout-btn{
+  background: transparent;
+  background: #00b695;
+  border: none;
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
 .header-btn:hover {
   background: rgba(128, 128, 128, 0.555);
 }
 .header-login:hover {
   cursor: pointer;
-  color: #00b695;
+  border-bottom: 2px solid white;
 }
 .header-login {
   color: white;
 }
-.hide {
-  /* display: none; */
+.logout-hide {
+  display: none;
 }
 .check-btn {
   font-size: 30px;

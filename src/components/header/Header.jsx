@@ -117,7 +117,7 @@ const Header = () => {
                 {userName ? `Hello- ${userName}` : "Login"}
               </span>
             </Link>
-            <button id="logout" className="hide" onClick={logout}>
+            <button id="logout" className={userName ? "logout-btn" : "logout-hide"} onClick={logout}>
               Log out
             </button>
           </div>

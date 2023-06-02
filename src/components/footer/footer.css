@@ -2,10 +2,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #00B696;
 }
 .footer-container{
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
     column-gap: 4rem;
@@ -20,7 +20,6 @@
 .footer-socials{
     display: flex;
     column-gap: 2rem;
-    /* margin-bottom: 2rem; */
 }
 .condition a{
     color: white;

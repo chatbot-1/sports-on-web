@@ -30,7 +30,7 @@ const Contact = () => {
       theme: "colored"
     });
   }
-
+  
   return (
     <>
       <div className="contact" id="contact">
@@ -51,7 +51,7 @@ const Contact = () => {
                 <span>Message</span>
               </div>
               <div class="inputbox">
-                <input type="submit" value="Send" onClick={confirm}/>
+                <input type="submit" value="Send" />
               </div>
               <ToastContainer />
             </form>

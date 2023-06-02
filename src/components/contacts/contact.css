@@ -4,6 +4,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #00B696;
 }
 .contactform {
   position: relative;
@@ -70,7 +71,6 @@
 }
 hr {
   width: 100%;
-  margin-bottom: 2rem;
 }
 .contact-women {
   position: absolute;
@@ -108,5 +108,11 @@ hr {
     align-items: center;
     left: 0;
     width: 100%;
+  }
+}
+@media (max-width: 500px){
+  .contactform h2 {
+    font-size: 2rem;
+    font-weight: 500;
   }
 }

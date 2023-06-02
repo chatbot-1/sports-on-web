@@ -4,6 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: #00bd9a;
 }
 .goal-content{
     display: flex;
@@ -61,7 +62,7 @@
 }
 @media (max-width: 833px){
     .goal{
-        margin-top: 5rem;
+        padding-top: 5rem;
         height: 100%;
     }
     .goal-content{
@@ -79,18 +80,18 @@
 }
 @media (max-width: 400px){
     .goal-man img{
-        height: 150px;
+        height: 130px;
     }
     .goal-img img{
-        height: 300px;
+        height: 280px;
     }
 
 }
 @media (max-width: 300px){
     .goal-man img{
-        height: 120px;
+        height: 100px;
     }
     .goal-img img{
-        height: 270px;
+        height: 250px;
     }
 }

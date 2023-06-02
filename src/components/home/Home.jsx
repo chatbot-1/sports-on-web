@@ -6,6 +6,7 @@ import back1 from "../../assets/back1.jpg";
 import back2 from "../../assets/back2.jpg";
 import back3 from "../../assets/back3.jpg";
 import back4 from "../../assets/back4.jpg";
+import foot from "../../assets/foot.jpg"
 import About from "../about/About";
 import Goal from "../goal/Goal";
 import Contact from "../contacts/Contact";
@@ -70,7 +71,7 @@ const Home = () => {
               <img src={back2} alt="" className="background" />
             </div> */}
             <div className="slide">
-              <img src={back3} alt="" className="background" />
+              <img src={foot} alt="" className="background" />
             </div>
             {/* <div className="slide">
               <img src={back4} alt="" className="background" />

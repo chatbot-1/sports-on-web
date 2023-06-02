@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #00B696;
 }
 .signup-container{
     display: flex;
@@ -12,6 +13,8 @@
     background: black;
     padding: 35px;
     border-radius: 15px;
+    background: #045345;
+
     /* width: 500px;
     height: 500px; */
 }
@@ -51,4 +54,67 @@
     cursor: pointer;
     border: none;
     outline: none;
+}
+
+@media (max-width: 550px) {
+    .signup-container{
+        padding: 25px;
+    }
+    .signup-data input{
+        width: 350px;
+        padding: 8px;
+        font-size: 15px;
+        margin-bottom: 1rem;
+    }
+    .signup-title{
+        font-size: 30px;
+        padding-bottom: 2rem;
+    }   
+    .signup-data span{
+        font-size: 15px;
+    }
+}
+@media (max-width: 430px) {
+    .signup-container{
+        padding: 15px;
+    }
+    .signup-data input{
+        width: 300px;
+        padding: 5px 10px;
+        font-size: 13px;
+        margin-bottom: 1rem;
+    }
+    .signup-title{
+        font-size: 25px;
+        padding-bottom: 2rem;
+    }   
+    .signup-data span{
+        font-size: 13px;
+    }
+}
+@media (max-width: 400px) {
+    .signup-container{
+        padding: 30px 20px;
+    }
+    .signup-data input{
+        width: 280px;
+    }
+   
+}
+@media (max-width: 350px) {
+    .signup-container{
+        padding: 30px 20px;
+    }
+    .signup-data input{
+        width: 220px;
+    }
+   
+}
+@media (max-width: 310px) {
+    .signup-container{
+        padding: 35px 10px;
+    }
+    .signup-data input{
+        width: 180px;
+    }   
 }
