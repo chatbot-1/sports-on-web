@@ -52,6 +52,7 @@ const Header = () => {
           <div className="header-left">
             <div className="header-list">
               <ul>
+                <Link to="/">
                 <li>
                   <a
                     href="#home"
@@ -63,6 +64,7 @@ const Header = () => {
                     Home
                   </a>
                 </li>
+                </Link>
                 <li>
                   <a
                     href="#about"
@@ -85,7 +87,7 @@ const Header = () => {
                     Our Goal
                   </a>
                 </li>
-                <li>
+                <Link to="/our-team"><li>
                   <a
                     href="#team"
                     onClick={() => setNavActive("#goal")}
@@ -96,6 +98,7 @@ const Header = () => {
                     Our Team
                   </a>
                 </li>
+                </Link>
                 <li>
                   <a
                     href="#contact"
@@ -111,7 +114,7 @@ const Header = () => {
             </div>
           </div>
           <div className="header-right">
-            <button className="header-btn">Join Now</button>
+            <Link to="/signup"><button className="header-btn">Join Now</button></Link>
             <Link to="/login">
               <span className="header-login">
                 {userName ? `Hello- ${userName}` : "Login"}

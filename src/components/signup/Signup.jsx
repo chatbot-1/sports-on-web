@@ -42,7 +42,7 @@ const Signup = () => {
     <div className="signup">
       <div className="signup-container">
 
-        <h2 className="signup-title">Login To Your Account</h2>
+        <h2 className="signup-title">Signup To Get An Account</h2>
         <form className="signup-data">
           <span>Full Name</span>
           <input

@@ -6,7 +6,7 @@ import box3 from "../../assets/box3.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
-const About = (props) => {
+const About = () => {
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.

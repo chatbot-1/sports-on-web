@@ -24,6 +24,8 @@
 .condition a{
     color: white;
     cursor: pointer;
+    border-bottom: 1px solid white;
+    cursor: pointer;
 }
 .privacy a{
     color: white;

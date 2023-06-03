@@ -1,0 +1,89 @@
+.terms{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(76deg, rgba(0,182,150,1) 0%, rgba(12,204,153,1) 100%);
+    padding-top: 4rem;
+}
+.terms-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    background: white;
+    color: #00b696;
+    margin: 0 auto;
+    padding: 20px 55px;
+}
+.terms-title{
+    padding-bottom: 1.5rem;
+    font-size: 22px;
+}
+.terms-content p{
+    padding: 10px 0;
+    font-weight: 500;
+}
+.terms-content{
+    height: 300px;
+    overflow-y: auto;
+    font-size: 15px;
+    padding-right: 30px;
+}
+.terms-content::-webkit-scrollbar{
+    width: 5px;
+    background: rgba(128, 128, 128, 0.438);
+    border-radius: 25px;
+    padding-left: 10px;
+}
+.terms-content::-webkit-scrollbar-thumb{
+    width: 5px;
+    background: #00b696;
+    border-radius: 25px;
+}
+.terms-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 3rem;
+    padding: 20px;
+}
+.terms-button button{
+    padding: 10px 20px;
+    font-size: 15px;
+    background: none;
+    color: #00b696;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 25px;
+    border: none;
+    border: 1px solid #00b696;
+    cursor: pointer;
+}
+.terms-button .terms-btn2{
+    background: #00b696;
+    color: white;
+}
+.terms-button .terms-btn2:hover{
+    background: #00caa5;
+}
+
+
+@media (max-width: 860px){
+    .terms-box{
+        width: 80%;
+    }
+    .terms-content{
+        height: 250px;
+    }
+    .terms-title{
+        font-size: 20px;
+    }
+    .terms-content p{
+        font-size: 12px;
+    }
+    .terms-button button{
+        font-size: 10px;
+    }
+}

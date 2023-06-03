@@ -1,6 +1,7 @@
 import React from "react";
 import "./footer.css";
 import logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -19,7 +20,7 @@ const Footer = () => {
           <a href="">Privacy and Policy</a>
         </div>
         <div className="condition">
-          <a href="">Terms and condition</a>
+          <Link to="/terms-and-conditions"><a href="">Terms and condition</a></Link>
         </div>
       </div>
     </div>

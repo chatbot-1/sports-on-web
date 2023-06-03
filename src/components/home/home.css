@@ -3,7 +3,7 @@
   position: relative;
 }
 .background {
-  height: 100%;
+  height: 100px;
   width: 100%;
   object-position: center;
   background-attachment: fixed;
@@ -15,95 +15,13 @@
   z-index: -1;
   background-repeat: no-repeat;
 }
-.slider{
-  height: 500px;
-}
-.slides{
-  height: 500px;
-  display: flex;
-}
-.slides input{
-  display: none;
-}
-.home-box {
-  display: flex;
-}
-.slide{
-  width: 20%;
-  transition: 2s;
-}
-.slide img{
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-}
-.navigation-manual{
-  position: absolute;
-  width: 100%;
-  margin-top: 5rem;
-  display: flex;
+.image-slider{
+  padding-top: 9rem;
+  /* display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100vh; */
 }
-.manual-btn{
-  border: 2px solid white;  
-  padding: 4px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-}
-.navigation-auto{
-  position: absolute;
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  margin-top: 580px;
-}
-.navigation-auto div{
-  border: 2px solid white;
-  padding: 4px;
-  border-radius: 10px;
-  transition: 1s;
-}
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
-}
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: white;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: white;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: white;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: white;
-}
-#radio5:checked ~ .navigation-auto .auto-btn5{
-  background: white;
-}
-.manual-btn:not(:last-child){
-  margin-right: 40px;
-}
-.manual-btn:hover{
-  background: white;
-}
-#radio1:checked ~ .first{
-  margin-left: 0;
-}
-#radio2:checked ~ .first{
-  margin-left: -20%;
-}
-#radio3:checked ~ .first{
-  margin-left: -40%;
-}
-#radio4:checked ~ .first{
-  margin-left: -60%;
-}
-#radio5:checked ~ .first{
-  margin-left: -80%;
-}
-
 
 .box1 {
   width: 150px;
@@ -113,6 +31,7 @@
   position: absolute;
   top: 20%;
   left: 20%;
+  z-index: 2222;
 }
 .box2 {
   width: 150px;
@@ -122,11 +41,13 @@
   position: absolute;
   top: 25%;
   left: 17.5%;
+  z-index: 2222;
 }
 .home-data {
   width: 400px;
   position: absolute;
   top: 40%;
+  z-index: 2222;
 }
 .home-data h1 {
   margin-bottom: 1rem;

@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #00B696;
+    background: linear-gradient(76deg, rgba(0,182,150,1) 0%, rgba(12,204,153,1) 100%);
 }
 .signup-container{
     display: flex;
