@@ -114,12 +114,15 @@ const Header = () => {
             </div>
           </div>
           <div className="header-right">
-            <Link to="/signup"><button className="header-btn">Join Now</button></Link>
+            <Link to="/signup"><button className={userName ? "logout-hide" : "header-btn"}>Join Now</button></Link>
             <Link to="/login">
-              <span className="header-login">
-                {userName ? `Hello- ${userName}` : "Login"}
+              <span className={userName ? "logout-hide" : "header-login"}>
+                Login
               </span>
             </Link>
+              <span className="header-login">
+                {userName ? `Hi- ${userName}` : ""}
+              </span>
             <button id="logout" className={userName ? "logout-btn" : "logout-hide"} onClick={logout}>
               Log out
             </button>

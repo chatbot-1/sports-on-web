@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./home.css";
 import Header from "../header/Header";
 import About from "../about/About";
@@ -7,8 +7,21 @@ import Contact from "../contacts/Contact";
 import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import SlideShow from "./SlideShow";
+import { getAuth } from "firebase/auth";
 
 const Home = () => {
+
+  const [userName, setUserName] = useState("");
+
+  const auth = getAuth();
+
+  useEffect(() => {
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        setUserName(user.displayName);
+      } else setUserName("");
+    });
+  }, []);
 
   return (
     <>
@@ -21,13 +34,13 @@ const Home = () => {
               <div className="box2"></div>
             </div>
             <div className="home-data">
-              <h1>Join Us Now!</h1>
+              <h1>{userName ? `Welcome ${userName}` : "Join Us Now!"}</h1>
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
                 nesciunt aperiam velit est nemo! Odit iusto aut reperitatis?
               </p>
               <Link to="/signup">
-                <button className="home-btn">
+                <button className={userName ? "logout-hide" : "home-btn"}>
                   Join Now
                   <i>
                     <box-icon name="chevron-right"></box-icon>

@@ -8,8 +8,6 @@ import Condition from "./termsAndConditions/Condition";
 
 function App() {
 
-  
-
   return (
     <>
       <BrowserRouter>
