@@ -25,15 +25,20 @@
 }
 .login-data input{
     width: 350px;
-    padding: 10px;
+    padding: 8px 10px;
     background: none;
     outline: none;
     border: none;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
     border: 1px solid white;
     border-radius: 10px;
     margin-bottom: 1rem;
+}
+.login-data span{
+    font-size: 16px;
+    padding-bottom: 5px;
+    padding-left: 13px;
 }
 .login-title{
     align-items: center;
@@ -79,7 +84,7 @@
     }
     .login-data input{
         width: 300px;
-        padding: 5px 10px;
+        padding: 8px 12px;
         font-size: 13px;
         margin-bottom: 1rem;
     }
@@ -89,6 +94,8 @@
     }   
     .login-data span{
         font-size: 13px;
+        padding-bottom: 5px;
+        padding-left: 12px;
     }
 }
 @media (max-width: 400px) {

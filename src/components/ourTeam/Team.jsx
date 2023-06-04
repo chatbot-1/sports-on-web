@@ -6,8 +6,7 @@ import Footer from "../footer/Footer";
 const Team = () => {
   return (
     <div>
-      <Header />
-      <div className="team">
+      <div className="team" id="team">
         <div className="team-container container">
           <div className="team-content">
             <div className="team-title">
@@ -90,7 +89,6 @@ const Team = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };

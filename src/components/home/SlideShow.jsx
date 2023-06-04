@@ -1,11 +1,12 @@
 import React from 'react'
-import 'react-slideshow-image/dist/styles.css'
+// import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image'
 import { Fade, Zoom } from 'react-slideshow-image'
 import front1 from "../../assets/front1.png";
 import front2 from "../../assets/front2.png";
 import front3 from "../../assets/front3.png";
 import front4 from "../../assets/front4.png";
+import "./slideshow.css"
 
 const slideImages = [
     {

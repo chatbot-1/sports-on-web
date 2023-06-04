@@ -16,8 +16,8 @@ const Footer = () => {
           <i class="fa-brands fa-instagram"></i>
           <i class="fa-brands fa-youtube"></i>
         </div>
-        <div className="privacy">
-          <a href="">Privacy and Policy</a>
+        <div className="private">
+          <Link to="/privacy-and-policy"><a href="">Privacy and Policy</a></Link>
         </div>
         <div className="condition">
           <Link to="/terms-and-conditions"><a href="">Terms and condition</a></Link>

@@ -30,7 +30,7 @@
   background: #00b696;
   position: absolute;
   top: 20%;
-  left: 20%;
+  left: 23%;
   z-index: 2222;
 }
 .box2 {
@@ -40,7 +40,7 @@
   background: #00b6953d;
   position: absolute;
   top: 25%;
-  left: 17.5%;
+  left: 20.5%;
   z-index: 2222;
 }
 .home-data {
@@ -52,6 +52,7 @@
 .home-data h1 {
   margin-bottom: 1rem;
   font-size: 3.5rem;
+  font-weight: 900;
 }
 .home-data p {
   margin-bottom: 1rem;
@@ -62,21 +63,27 @@
   border: none;
   outline: none;
   background: #00b696;
-  padding: 8px 20px;
+  padding: 8px 25px;
   display: flex;
   align-items: center;
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 30px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   cursor: pointer;
+  letter-spacing: 1px;
 }
 .home-btn i {
   margin-left: 15px;
   background: rgba(255, 255, 255, 0.541);
   border-radius: 25px;
-  font-size: 8px;
+  font-size: 15px;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .home-social {
   display: flex;
@@ -91,8 +98,8 @@
   padding: 20px 10px;
   position: fixed;
   border-radius: 20px 0 0 20px;
-  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.842);
-  z-index: 9999;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.242);
+  z-index: 1111;
 }
 .fa-brands {
   cursor: pointer;
@@ -130,10 +137,12 @@
   .box1{
     width: 130px;
     height: 420px;
+    left: 30%;
   }
   .box2{
     width: 130px;
     height: 420px;
+    left: 26.5%;
   }
 }
 @media (max-width: 400px){

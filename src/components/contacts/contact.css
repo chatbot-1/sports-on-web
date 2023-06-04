@@ -15,7 +15,7 @@
 }
 .contactform h2 {
   font-size: 3rem;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 2.5rem;
 }
 .inputbox {
@@ -94,7 +94,6 @@ hr {
   }
   .contactform h2 {
     font-size: 2.5rem;
-    font-weight: 500;
     margin-bottom: 2.5rem;
   }
 }
@@ -113,6 +112,5 @@ hr {
 @media (max-width: 500px){
   .contactform h2 {
     font-size: 2rem;
-    font-weight: 500;
   }
 }

@@ -3,9 +3,10 @@ import "./signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../firebase";
+import Header from "../header/Header";
+import Footer from "../footer/Footer";
 
 const Signup = () => {
-
   const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
@@ -29,61 +30,67 @@ const Signup = () => {
         await updateProfile(user, {
           displayName: values.name,
         });
-        console.log(user)
+        console.log(user);
         navigate("/");
       })
       .catch((err) => {
-        setSubmitButton(false)
-        alert(err.message)
+        setSubmitButton(false);
+        alert(err.message);
       });
   };
 
   return (
-    <div className="signup">
-      <div className="signup-container">
-
-        <h2 className="signup-title">Signup To Get An Account</h2>
-        <form className="signup-data">
-          <span>Full Name</span>
-          <input
-            type="text"
-            placeholder="enter your full name"
-            onChange={(event) =>
-              setValues((prev) => ({ ...prev, name: event.target.value }))
-            }
-          />
-          <span>Email</span>
-          <input
-            type="email"
-            placeholder="enter your email"
-            onChange={(event) =>
-              setValues((prev) => ({ ...prev, email: event.target.value }))
-            }
-          />
-          <span>Password</span>
-          <input
-            type="password"
-            placeholder="enter your password"
-            onChange={(event) =>
-              setValues((prev) => ({ ...prev, pass: event.target.value }))
-            }
-          />
-        </form>
-        <button
-          className="signup-btn"
-          onClick={handleSubmission}
-          disabled={submitButton}
-        >
-          Sign Up
-        </button>
-        <p className="signup-last">
-          Already have an Account?{" "}
-          <Link to="/login">
-            <span>Sign In</span>
-          </Link>
-        </p>
+    <>
+    <Header/>
+      <div className="signup">
+        <div className="signup-content">
+          <div className="signup-container">
+            <h2 className="signup-title">Signup</h2>
+            <form className="signup-data">
+              <span>Full Name</span>
+              <input
+                type="text"
+                placeholder="enter your full name"
+                onChange={(event) =>
+                  setValues((prev) => ({ ...prev, name: event.target.value }))
+                }
+              />
+              <span>Email</span>
+              <input
+                type="email"
+                placeholder="enter your email"
+                onChange={(event) =>
+                  setValues((prev) => ({ ...prev, email: event.target.value }))
+                }
+              />
+              <span>Password</span>
+              <input
+                type="password"
+                placeholder="enter your password"
+                onChange={(event) =>
+                  setValues((prev) => ({ ...prev, pass: event.target.value }))
+                }
+              />
+            </form>
+            <button
+              className="signup-btn"
+              onClick={handleSubmission}
+              disabled={submitButton}
+            >
+              Sign Up
+            </button>
+            <p className="signup-last">
+              Already have an Account?{" "}
+              <Link to="/login">
+                <span>Sign In</span>
+              </Link>
+            </p>
+          </div>
+          <Link to="/"><button className="terms-btn">Back to the home page</button></Link>
+        </div>
       </div>
-    </div>
+      <Footer/>
+    </>
   );
 };
 

@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -34,9 +36,16 @@ const Login = () => {
   };
 
   return (
+
+    <>
+    <Header/>
+
     <div className="login">
+      <div className="login-content">
+
+      
       <div className="login-container">
-        <h2 className="login-title">Login To Your Account</h2>
+        <h2 className="login-title">Login</h2>
         <div className="login-data">
           <span>Email</span>
           <input
@@ -69,7 +78,11 @@ const Login = () => {
           </Link>
         </p>
       </div>
+      <Link to="/"><button className="terms-btn">Back to the home page</button></Link>
+      </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

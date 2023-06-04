@@ -8,6 +8,7 @@ import Footer from "../footer/Footer";
 import { Link } from "react-router-dom";
 import SlideShow from "./SlideShow";
 import { getAuth } from "firebase/auth";
+import Team from "../ourTeam/Team";
 
 const Home = () => {
 
@@ -42,9 +43,7 @@ const Home = () => {
               <Link to="/signup">
                 <button className={userName ? "logout-hide" : "home-btn"}>
                   Join Now
-                  <i>
-                    <box-icon name="chevron-right"></box-icon>
-                  </i>
+                  <i class="fa-solid fa-chevron-right"></i>
                 </button>
               </Link>
             </div>
@@ -60,6 +59,7 @@ const Home = () => {
       </section>
       <About />
       <Goal />
+      <Team/>
       <Contact />
       <Footer />
     </>

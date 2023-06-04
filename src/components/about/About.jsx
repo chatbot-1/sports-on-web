@@ -4,7 +4,8 @@ import box1 from "../../assets/box1.png";
 import box2 from "../../assets/box2.png";
 import box3 from "../../assets/box3.png";
 import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+// import "react-multi-carousel/lib/styles.css";
+import "./carousal.css"
 
 const About = () => {
   const responsive = {
