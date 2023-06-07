@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./privacy.css";
 import Header from "../header/Header.jsx";
 import Footer from "../footer/Footer.jsx";
+import { useLocation } from "react-router-dom";
+import CommonHeader from "../commonHeader/commonHeader";
 
 const Privacy = () => {
+
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
     <>
-      <Header />
+      <CommonHeader/>
       <div className="privacy">
         <div className="privacy-content">
           <div className="privacy-container container">

@@ -1,11 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./login.css";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../../firebase";
 import Footer from "../footer/Footer";
 import Header from "../header/Header";
+import CommonHeader from "../commonHeader/commonHeader";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -35,10 +36,16 @@ const Login = () => {
       });
   };
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
 
     <>
-    <Header/>
+    <CommonHeader/>
 
     <div className="login">
       <div className="login-content">

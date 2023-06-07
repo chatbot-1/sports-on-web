@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./signup.css";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 import { auth } from "../../firebase";
-import Header from "../header/Header";
+// import Header from "../header/Header";
 import Footer from "../footer/Footer";
+import CommonHeader from "../commonHeader/commonHeader";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -39,9 +40,16 @@ const Signup = () => {
       });
   };
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   return (
+
     <>
-    <Header/>
+    <CommonHeader/>
       <div className="signup">
         <div className="signup-content">
           <div className="signup-container">

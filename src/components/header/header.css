@@ -69,6 +69,7 @@
   column-gap: 3rem;
   font-weight: bold;
   text-transform: uppercase;
+  color: white;
 }
 .header-logo img {
   height: 40px;
@@ -82,9 +83,11 @@
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 10px;
-  border: 2px solid white;
+  border: 2px solid #00b695;
   cursor: pointer;
   transition: 0.2s ease-in;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 }
 .logout-btn {
   background: transparent;
@@ -140,10 +143,6 @@
   .header-logo img {
     height: 35px;
   }
-  .header-btn,
-  .header-login {
-    font-size: 12px;
-  }
   .header-btn {
     padding: 6px 10px;
   }
@@ -152,9 +151,7 @@
   .header-logo img {
     height: 35px;
   }
-  .header-left ul {
-    /* font-size: 13px; */
-  }
+  
 }
 @media (max-width: 858px) {
   .header {

@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./condition.css";
 import Header from "../components/header/Header";
 import Footer from "../components/footer/Footer";
 import { useNavigate } from "react-router-dom";
 import logo from "../assets/logo.png"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import CommonHeader from "../components/commonHeader/commonHeader";
 
 const Condition = () => {
   const navigate = useNavigate();
@@ -13,9 +14,16 @@ const Condition = () => {
     navigate("/");
   };
 
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+
   return (
     <>
-    <Header/>
+    <CommonHeader/>
       <div className="terms">
         <div className="terms-container container">
           <div className="terms-box">
