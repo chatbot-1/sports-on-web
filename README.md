@@ -1,4 +1,7 @@
 Getting started with React+Vite
+
+Make sure that node latest version is intalled in your stystem.
+
 1. npm install vite
 
 Install the node modules
