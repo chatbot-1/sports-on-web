@@ -6,7 +6,7 @@
   padding: 0;
   width: 100%;
   z-index: 9999;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .header-container {
   width: 1050px;
@@ -86,7 +86,7 @@
   cursor: pointer;
   transition: 0.2s ease-in;
 }
-.logout-btn{
+.logout-btn {
   background: transparent;
   background: #00b695;
   border: none;
@@ -97,7 +97,6 @@
   border-radius: 10px;
   cursor: pointer;
   transition: 0.2s ease-in;
-  margin-top: 1rem;
 }
 .header-btn:hover {
   background: rgba(128, 128, 128, 0.555);
@@ -125,8 +124,6 @@
   display: none;
 }
 
-
-
 @media (max-width: 1100px) {
   .header-container {
     width: 850px;
@@ -136,17 +133,18 @@
     justify-content: space-between;
     align-items: center;
   }
-  .header-left ul{
+  .header-left ul {
+    column-gap: 2rem;
     font-size: 12px;
   }
   .header-logo img {
     height: 35px;
   }
   .header-btn,
-  .header-login{
+  .header-login {
     font-size: 12px;
   }
-  .header-btn{
+  .header-btn {
     padding: 6px 10px;
   }
 }
@@ -155,7 +153,7 @@
     height: 35px;
   }
   .header-left ul {
-    font-size: 13px;
+    /* font-size: 13px; */
   }
 }
 @media (max-width: 858px) {
@@ -169,10 +167,10 @@
   .header-logo-hide {
     display: block;
     height: 35px;
-    padding: 15px 10px;
+    padding: 15px 15px;
   }
   .header-logo-hide img {
-    height: 40px;
+    height: 35px;
   }
   .check-btn {
     display: block;
@@ -212,6 +210,9 @@
   }
   .header-btn {
     margin-bottom: 2rem;
+  }
+  .logout-btn {
+    margin-top: 1rem;
   }
   .hide {
     margin-top: 2rem;
