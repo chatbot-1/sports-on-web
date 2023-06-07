@@ -29,8 +29,8 @@
   transform: skew(23deg);
   background: #00b696;
   position: absolute;
-  top: 20%;
-  left: 23%;
+  top: 16%;
+  left: 27%;
   z-index: 2222;
 }
 .box2 {
@@ -39,8 +39,8 @@
   transform: skew(23deg);
   background: #00b6953d;
   position: absolute;
-  top: 25%;
-  left: 20.5%;
+  top: 22%;
+  left: 24.5%;
   z-index: 2222;
 }
 .home-data {
@@ -70,7 +70,7 @@
   font-weight: bold;
   text-transform: uppercase;
   border-radius: 30px;
-  margin-top: 4rem;
+  margin-top: 3rem;
   cursor: pointer;
   letter-spacing: 1px;
 }
@@ -137,12 +137,12 @@
   .box1{
     width: 130px;
     height: 420px;
-    left: 30%;
+    left: 35%;
   }
   .box2{
     width: 130px;
     height: 420px;
-    left: 26.5%;
+    left: 30.5%;
   }
 }
 @media (max-width: 400px){

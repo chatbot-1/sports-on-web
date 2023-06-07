@@ -118,7 +118,7 @@ const Header = () => {
           </Link>
           <Link to="/login">
             <span className={userName ? "logout-hide" : "header-login"}>
-              Login
+              Log in
             </span>
           </Link>
           <span className="header-login">

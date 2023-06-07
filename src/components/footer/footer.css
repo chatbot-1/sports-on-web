@@ -50,8 +50,8 @@
         height: 35px;
     }
     .condition,
-    .privacy{
-        font-size: 15px;
+    .private{
+        font-size: 14px;
     }
 }
 @media (max-width: 530px){
@@ -60,5 +60,9 @@
         flex-direction: column;
         margin-bottom: 3rem;
         row-gap: 1rem;
+    }
+    .condition,
+    .private{
+        font-size: 12px;
     }
 }
