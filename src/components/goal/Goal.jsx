@@ -11,35 +11,36 @@ const Goal = () => {
           <div className="goal-data">
             <h2>Our Goal</h2>
             <p>
-              At SportOn, our mission is to empower sports enthusiasts like you
-              to connect, organize, and play together. We understand the passion
-              you have for sports and the joy that comes from sharing those
-              experiences with others. That's why we've created a platform that
-              makes it easier than ever to coordinate and participate in sports
-              matches, bringing your favorite activities to life.
+              The goal of SportOn is to create a dynamic and inclusive global
+              platform that caters to athletes from different countries,
+              fostering a sense of community and collaboration. The project aims
+              to provide a comprehensive ecosystem where athletes can not only
+              choose and participate in their favorite sports such as football,
+              basketball, volleyball, and badminton but also organize and engage
+              in sports events worldwide.
+            </p>
+
+            <p>
+              SportOn's overarching objective is to enable athletes to track
+              their personal growth and development within their chosen sports.
+              The platform will facilitate seamless connections between
+              like-minded individuals, encouraging the exchange of ideas,
+              strategies, and experiences. By emphasizing inclusivity, SportOn
+              seeks to break down geographical barriers, allowing athletes from
+              diverse backgrounds to come together, compete, and collectively
+              celebrate their passion for sports.
             </p>
             <p>
-              With SportOn, you have the power to take control of your sporting
-              journey. Whether you're looking to join an existing session,
-              create a new one, or simply find like-minded individuals to engage
-              in a friendly match, our app is here to support you every step of
-              the way.
-            </p>
-            <p>
-              Furthermore, we're committed to ensuring a safe and inclusive
-              environment for everyone. We prioritize user privacy and provide
-              moderation tools to maintain a respectful and enjoyable
-              atmosphere. Our goal is to foster a supportive community where
-              people of all backgrounds and skill levels feel welcome,
-              motivated, and inspired to push their sporting boundaries.
-            </p>
-            <p>
-              Join us on this exciting journey as we revolutionize the way
-              sports matches are organized and experienced. With SportOn, you
-              have the ultimate tool to unleash your passion for sports, forge
-              unforgettable memories, and create a vibrant community of sports
-              enthusiasts. Let's come together, play together, and elevate the
-              way we enjoy sports!
+              Furthermore, the project aims to enhance the overall sporting
+              experience by integrating features that promote fair play, healthy
+              competition, and skill improvement. With an emphasis on
+              user-friendly interfaces and robust tracking mechanisms, SportOn
+              strives to be a go-to platform for athletes seeking not only a
+              competitive edge but also a supportive and global community to
+              share their athletic journey. Ultimately, SportOn aims to redefine
+              the way athletes connect, compete, and thrive in their respective
+              sports, creating a lasting impact on the world of sports
+              networking and development.
             </p>
           </div>
           <div className="goal-img">

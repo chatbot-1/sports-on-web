@@ -49,42 +49,10 @@ const Team = () => {
                   accusamus!
                 </p>
               </div>
-              <div className="team-box">
-                <img src="" alt="" />
-                <h3>Name</h3>
-                <span>Programmer</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
-                  accusamus!
-                </p>
-              </div>
-              <div className="team-box">
-                <img src="" alt="" />
-                <h3>Name</h3>
-                <span>Programmer</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
-                  accusamus!
-                </p>
-              </div>
-              <div className="team-box">
-                <img src="" alt="" />
-                <h3>Name</h3>
-                <span>Programmer</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
-                  accusamus!
-                </p>
-              </div>
-              <div className="team-box">
-                <img src="" alt="" />
-                <h3>Name</h3>
-                <span>Programmer</span>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum,
-                  accusamus!
-                </p>
-              </div>
+
+              
+              
+              
             </div>
           </div>
         </div>

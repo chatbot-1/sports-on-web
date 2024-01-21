@@ -24,7 +24,7 @@ const Privacy = () => {
               <div className="privacy-box">
                 <div className="privacy-header">
                   <p>
-                    Effective July 6, 2023 <br />
+                    Effective January 6, 2024 <br />
                     Our Privacy Policy has been updated.
                   </p>
                 </div>

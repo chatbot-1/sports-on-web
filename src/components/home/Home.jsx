@@ -11,7 +11,6 @@ import { getAuth } from "firebase/auth";
 import Team from "../ourTeam/Team";
 
 const Home = () => {
-
   const [userName, setUserName] = useState("");
 
   const auth = getAuth();
@@ -37,8 +36,10 @@ const Home = () => {
             <div className="home-data">
               <h1>{userName ? `Welcome ${userName}` : "Join Us Now!"}</h1>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo
-                nesciunt aperiam velit est nemo! Odit iusto aut reperitatis?
+                SportOn unites athletes from diverse nations, fostering a global
+                community to participate, organize, and compete in various
+                sports events, providing a platform to track individual and
+                collective athletic growth.
               </p>
               <Link to="/signup">
                 <button className={userName ? "logout-hide" : "home-btn"}>
@@ -55,11 +56,11 @@ const Home = () => {
             </div>
           </div>
         </div>
-        <SlideShow/>
+        <SlideShow />
       </section>
       <About />
       <Goal />
-      <Team/>
+      <Team />
       <Contact />
       <Footer />
     </>
